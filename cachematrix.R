@@ -2,7 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
+#For both functions, used the test cases contained here at this url,https://www.coursera.org/learn/r-programming/discussions/weeks/3/threads/ePlO1eMdEeahzg7_4P4Vvg , in testing these functions: 
 
+
+#This function, makeCacheMatrix, takes a matrix as input and returns a list of functions
+#The returned list of functions "holds" the makeCacheMatrix variables, including m, in memory, for later use.
 
 makeCacheMatrix <- function(x = matrix()) {
         #m holds, or will hold, the eventual inverse of x
@@ -32,6 +36,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+#cacheSolve takes an object of makeCacheMatrix and returns a matrix that is an inverse of the input matrix to makeCacheMatrix.
+#It first gets the value of m from the makeCacheMatrix object and then, if the inverse has already been calculated (m is not null) it returns that with an appropriate message
+#If m is null then it gets the input matrix to the makeCacheMatrix and calculates the matrix inverse of it. 
+#It then sets the inverse in the makeCacheMatrix object and returns the matrix inverse.
 
 cacheSolve <- function(x, ...) {
         #assumes argument passed in is a makeCacheMatrix object
